@@ -1,0 +1,1679 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(219, 223, 224, 0.335);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: auto;
+    padding: 0 10%;
+    position: relative;
+}
+
+.container1 {
+    padding: 20px;
+    justify-content: center;
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/* Header */
+.header {
+    background: radial-gradient(#fff, #ffd6d6);
+    min-height: 100vh;
+}
+
+/* Logo */
+.logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+    border-radius: 10px;
+    position: fixed;
+    top: 5px;
+    left: 70px;
+    width: calc(100% - 80px);
+    background-color: #ee5656;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+    z-index: 1000;
+}
+
+nav {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ff523b;
+    border-radius: 3px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #ff523b;
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.dropdown li {
+    margin: 5px 0;
+}
+
+.dropdown li a {
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+/* Menu Icon */
+.menu-icon {
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Row Layout */
+.row {
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img {
+    margin-top: 50px;
+    max-width: 80%;
+    /* margin-left: 100px; */
+    border-radius: 10px;
+}
+
+.col-2 h1 {
+    font-family: 'Cinzel', serif;
+    color: #ff523b;
+    font-size: 40px;
+    line-height: 50px;
+    margin: 25px 0;
+}
+
+.btn {
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 1s;
+}
+
+.btn:hover {
+    background: #563434;
+}
+
+/* Category */
+.categories {
+    margin: 70px 0;
+}
+
+.col-3 {
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-3 img {
+    width: 100%;
+    height: 75vh;
+}
+
+/* Products */
+.col-4 {
+    flex-basis: 25%;
+    padding: 20px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.col-4 img {
+    width: 100%;
+    height: 50vh;
+}
+
+.col-4 p {
+    font-size: 14px;
+}
+
+/* Offer Section */
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    margin-top: 80px;
+    padding: 30px 0;
+    min-height: 100vh;
+}
+
+.col-2 .offer-img {
+    padding: 80px;
+}
+
+.col-2 small {
+    color: #555;
+}
+
+/* Testimonial */
+.testimonial {
+    padding: 30px;
+}
+
+.testimonial .col-3 {
+    text-align: center;
+    padding: 20px 10px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial .user-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.testimonial .fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+/* Contact Section */
+.contact-heading {
+    font-family: 'Lora', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff523b;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.contact-subheading {
+    font-family: 'Lora', serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ff523b;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.contact-detail, .contact-info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-detail strong {
+    color: #333;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+    color: #ff523b;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+/* Footer Styling */
+.footer {
+    background-color: #282828;
+    color: #ffffff;
+    /* padding: 10px 0; */
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.footer h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.footer .footer-col-1, .footer-col-2, .footer-col-4 {
+    flex-basis: 22%;
+    padding: 10px;
+    min-width: 250px;
+}
+
+.footer .app-logo img {
+    width: 150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer .footer-logo {
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: #ff523b;
+}
+
+.footer .newsletter h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer .newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .newsletter input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.footer .newsletter button.btn {
+    background-color: #ff523b;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.footer .newsletter button.btn:hover {
+    background-color: #e94e27;
+}
+
+.footer .social-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .social-links li {
+    margin-bottom: 10px;
+}
+
+.footer .social-links li a {
+    color: #cccccc;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.footer .social-links li a:hover {
+    color: #ff523b;
+}
+
+.footer hr {
+    border: none;
+    background-color: #555555;
+    height: 1px;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    text-align: center;
+    padding: 10px 0;
+    /* max-width: 1200px; */
+    margin: auto;
+}
+
+.footer-bottom p {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+    .footer .row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-bottom {
+        flex-direction: column;
+    }
+    .footer-bottom {
+        margin-top: 10px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media only screen and (max-width: 600px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 40px;
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: none;
+    }
+
+    /* Show the menu icon for mobile */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 60vh;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .header img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Adjust the row layout for mobile */
+    .row {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 10px 0;
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 40px 0;
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 20px;
+    }
+
+    .offer h1 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .testimonial .col-3 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 18px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer .footer-col-2, .footer .footer-col-4 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Add smooth transitions for interactive elements */
+    .menu-icon, .header, .offer, .testimonial, .footer {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensure images are fully responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.4;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 10px 0;
+    }
+}
+
+/* ---mk */
+@media only screen and (max-width: 600px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 40px;
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: none;
+    }
+
+    /* Show the menu icon for mobile */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+    /* Menu toggle for mobile */
+    .menu-icon.active + .navbar {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #fff;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 60vh;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 24px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .header p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .header img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Adjust the row layout for mobile */
+    .row {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 10px 0;
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 40px 0;
+    }
+
+    .categories .col-3 {
+        margin-bottom: 20px;
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 20px;
+    }
+
+    .offer h1 {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .testimonial .col-3 p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 18px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer .footer-col-2, .footer .footer-col-4 {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+
+    .footer h3 {
+        font-size: 16px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+
+    .footer-bottom {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    /* Add smooth transitions for interactive elements */
+    .menu-icon, .header, .offer, .testimonial, .footer {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensure images are fully responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.4;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 10px 0;
+    }
+
+    /* Smooth scrolling for mobile */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Remove unnecessary margins for mobile */
+    .header, .offer, .testimonial {
+        margin-bottom: 20px;
+    }
+}
+
+/* ---400 */
+@media only screen and (max-width: 400px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 30px;
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: none;
+    }
+
+    /* Show the menu icon for mobile */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer;
+        font-size: 28px;
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 50vh;
+        padding: 8px;
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 8px;
+    }
+
+    .header p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .header img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Adjust the row layout for smaller mobile */
+    .row {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 8px 0;
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        margin-left: 0;
+        height: auto;
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 30px 0;
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 15px;
+    }
+
+    .offer h1 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 15px 0;
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .testimonial .col-3 p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 16px;
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer .footer-col-2, .footer .footer-col-4 {
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+
+    .footer h3 {
+        font-size: 14px;
+    }
+
+    .footer p {
+        font-size: 10px;
+    }
+
+    .footer-bottom {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    /* Add smooth transitions for interactive elements */
+    .menu-icon, .header, .offer, .testimonial, .footer {
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Ensure images are fully responsive */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.3;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 8px 0;
+    }
+
+    /* Smooth scrolling for mobile */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* Remove unnecessary margins for mobile */
+    .header, .offer, .testimonial {
+        margin-bottom: 15px;
+    }
+}
+
+/* 300 */
+/* Mobile adjustments for screens smaller than 300px */
+@media (max-width: 300px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 30px; /* Further reduce logo size */
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: none;
+    }
+
+    /* Show the menu icon for mobile */
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        cursor: pointer;
+        font-size: 24px; /* Smaller menu icon */
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 50vh;
+        padding: 5px; /* Reduce padding for small screens */
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 18px; /* Smaller font size for header */
+    }
+
+    .header img {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Adjust the row layout for mobile */
+    .row {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 5px 0; /* Reduced padding */
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%; /* Ensure images fit within the screen */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 20px 0; /* Reduced margin for categories */
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 10px 0; /* Reduced padding */
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 10px;
+    }
+
+    .offer h1 {
+        font-size: 16px; /* Smaller font size for offer heading */
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 10px 0; /* Reduced padding */
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 10px; /* Reduced margin */
+    }
+
+    .testimonial .col-3 p {
+        font-size: 12px; /* Smaller font size for testimonial text */
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 14px; /* Smaller font size for testimonial heading */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 5px 0; /* Reduced padding for footer */
+        text-align: center;
+        font-size: 12px; /* Smaller font size for footer text */
+    }
+
+    .footer .footer-col-1, .footer-col-2, .footer-col-4 {
+        flex-basis: 100%; /* Stack columns vertically */
+        padding: 5px; /* Reduced padding */
+    }
+
+    .footer-logo {
+        width: 60px; /* Smaller logo for footer */
+    }
+
+    .app-logo img {
+        width: 60px; /* Ensure app logo size is consistent */
+    }
+
+    .footer h3 {
+        font-size: 12px; /* Smaller heading font size */
+    }
+
+    .footer p {
+        font-size: 10px; /* Smaller text font size */
+        line-height: 1.4; /* Adjusted line-height for readability */
+    }
+
+    .footer ul li a {
+        font-size: 10px; /* Smaller link font size */
+    }
+
+    .footer .newsletter input[type="email"] {
+        font-size: 10px; /* Smaller font size for input field */
+        padding: 5px; /* Reduced padding for input field */
+    }
+
+    .footer .newsletter button.btn {
+        font-size: 10px; /* Smaller font size for button */
+        padding: 5px; /* Reduced padding for button */
+    }
+
+    .footer hr {
+        margin: 5px 0; /* Minimal margin between sections */
+    }
+
+    .footer-bottom {
+        padding: 5px 0; /* Reduced padding for footer bottom */
+        font-size: 10px; /* Smaller font size for footer bottom text */
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.3; /* Reduced line-height for small screens */
+    }
+
+    p {
+        font-size: 10px; /* Adjusted font size for better readability */
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%; /* Full width for buttons */
+        font-size: 10px; /* Smaller font size for buttons */
+        padding: 5px; /* Reduced padding for buttons */
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 5px 0; /* Reduced padding */
+    }
+}
+/* 700 */
+/* Adjustments for screens between 600px and 700px */
+@media (min-width: 600px) and (max-width: 700px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 50px; /* Slightly larger logo for medium screens */
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: flex;
+        justify-content: center; /* Center navbar items */
+    }
+
+    /* Show the menu icon for smaller screens */
+    .menu-icon {
+        display: none; /* Hide menu icon as navbar is now visible */
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 60vh;
+        padding: 15px; /* Increased padding */
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 28px; /* Increased font size for header */
+    }
+
+    .header img {
+        max-width: 90%; /* Adjusted width for header image */
+    }
+
+    /* Adjust the row layout for medium screens */
+    .row {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 15px 0; /* Increased padding for columns */
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 30px 0; /* Increased margin for categories */
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 20px 0; /* Increased padding for offers */
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 20px;
+    }
+
+    .offer h1 {
+        font-size: 24px; /* Increased font size for offer heading */
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 20px 0; /* Increased padding for testimonials */
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 15px; /* Increased margin */
+    }
+
+    .testimonial .col-3 p {
+        font-size: 16px; /* Larger font size for testimonial text */
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 20px; /* Larger font size for testimonial heading */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 15px 0; /* Increased padding for footer */
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer-col-2, .footer-col-4 {
+        flex-basis: 30%; /* Adjust column width */
+        padding: 15px; /* Increased padding */
+        min-width: 250px; /* Ensure minimum width */
+    }
+
+    .footer-logo {
+        width: 100px; /* Larger footer logo */
+    }
+
+    .app-logo img {
+        width: 100px; /* Ensure app logo size is consistent */
+    }
+
+    .footer h3 {
+        font-size: 16px; /* Larger heading font size */
+    }
+
+    .footer p {
+        font-size: 12px; /* Adjusted text font size */
+    }
+
+    .footer ul li a {
+        font-size: 12px; /* Adjusted link font size */
+    }
+
+    .footer .newsletter input[type="email"] {
+        font-size: 12px; /* Adjusted font size for input field */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .footer .newsletter button.btn {
+        font-size: 12px; /* Adjusted font size for button */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    .footer hr {
+        margin: 15px 0; /* Adjusted margin for horizontal rule */
+    }
+
+    .footer-bottom {
+        padding: 15px 0; /* Increased padding for footer bottom */
+        font-size: 12px; /* Adjusted font size for footer bottom text */
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.4; /* Increased line-height */
+    }
+
+    p {
+        font-size: 12px; /* Adjusted font size for better readability */
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        font-size: 12px; /* Adjusted font size for buttons */
+        padding: 10px; /* Adjusted padding */
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 15px 0; /* Increased padding */
+    }
+}
+/* 800 */
+/* Adjustments for screens between 700px and 800px */
+@media (min-width: 700px) and (max-width: 800px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 60px; /* Slightly larger logo for medium screens */
+    }
+
+    /* Mobile navbar adjustments */
+    .navbar {
+        display: flex;
+        justify-content: center; /* Center navbar items */
+    }
+
+    /* Hide menu icon when navbar is visible */
+    .menu-icon {
+        display: none; /* Hide menu icon as navbar is now visible */
+    }
+
+    /* Mobile view for header */
+    .header {
+        min-height: 60vh;
+        padding: 20px; /* Increased padding for larger screens */
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 32px; /* Larger font size for header */
+    }
+
+    .header img {
+        max-width: 90%; /* Adjusted width for header image */
+    }
+
+    /* Adjust the row layout for medium screens */
+    .row {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 20px 0; /* Increased padding for columns */
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Category section mobile adjustments */
+    .categories {
+        margin: 40px 0; /* Increased margin for categories */
+    }
+
+    /* Offer section mobile adjustments */
+    .offer {
+        min-height: auto;
+        padding: 20px 0; /* Increased padding for offers */
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 20px;
+    }
+
+    .offer h1 {
+        font-size: 26px; /* Increased font size for offer heading */
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 20px 0; /* Increased padding for testimonials */
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px; /* Increased margin */
+    }
+
+    .testimonial .col-3 p {
+        font-size: 16px; /* Larger font size for testimonial text */
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 22px; /* Larger font size for testimonial heading */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 20px 0; /* Increased padding for footer */
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer-col-2, .footer-col-4 {
+        flex-basis: 30%; /* Adjust column width */
+        padding: 15px; /* Increased padding */
+        min-width: 250px; /* Ensure minimum width */
+    }
+
+    .footer-logo {
+        width: 120px; /* Larger footer logo */
+    }
+
+    .app-logo img {
+        width: 120px; /* Ensure app logo size is consistent */
+    }
+
+    .footer h3 {
+        font-size: 18px; /* Larger heading font size */
+    }
+
+    .footer p {
+        font-size: 14px; /* Adjusted text font size */
+    }
+
+    .footer ul li a {
+        font-size: 14px; /* Adjusted link font size */
+    }
+
+    .footer .newsletter input[type="email"] {
+        font-size: 14px; /* Adjusted font size for input field */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    .footer .newsletter button.btn {
+        font-size: 14px; /* Adjusted font size for button */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    .footer hr {
+        margin: 20px 0; /* Adjusted margin for horizontal rule */
+    }
+
+    .footer-bottom {
+        padding: 20px 0; /* Increased padding for footer bottom */
+        font-size: 14px; /* Adjusted font size for footer bottom text */
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.4; /* Increased line-height */
+    }
+
+    p {
+        font-size: 14px; /* Adjusted font size for better readability */
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        font-size: 14px; /* Adjusted font size for buttons */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 15px 0; /* Increased padding */
+    }
+}
+/* 900 */
+/* Adjustments for screens between 800px and 900px */
+@media (min-width: 800px) and (max-width: 900px) {
+    /* Adjust header and logo */
+    .logo img {
+        width: 70px; /* Larger logo for medium screens */
+    }
+
+    /* Navbar adjustments */
+    .navbar {
+        display: flex;
+        justify-content: center; /* Center navbar items */
+    }
+
+    /* Hide menu icon when navbar is visible */
+    .menu-icon {
+        display: none; /* Hide menu icon as navbar is now visible */
+    }
+
+    /* Header adjustments */
+    .header {
+        min-height: 60vh;
+        padding: 30px; /* Increased padding for larger screens */
+        text-align: center;
+    }
+
+    .header .row {
+        flex-direction: column;
+    }
+
+    .header h1 {
+        font-size: 36px; /* Larger font size for header */
+    }
+
+    .header img {
+        max-width: 90%; /* Adjusted width for header image */
+    }
+
+    /* Row layout adjustments */
+    .row {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
+        padding: 20px 0; /* Increased padding for columns */
+    }
+
+    .col-2 img, .col-3 img, .col-4 img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Category section adjustments */
+    .categories {
+        margin: 50px 0; /* Increased margin for categories */
+    }
+
+    /* Offer section adjustments */
+    .offer {
+        min-height: auto;
+        padding: 30px 0; /* Increased padding for offers */
+        text-align: center;
+    }
+
+    .offer .col-2 {
+        padding: 20px;
+    }
+
+    .offer h1 {
+        font-size: 28px; /* Larger font size for offer heading */
+    }
+
+    /* Testimonial adjustments */
+    .testimonial {
+        padding: 30px 0; /* Increased padding for testimonials */
+        text-align: center;
+    }
+
+    .testimonial .col-3 {
+        flex-basis: 100%;
+        margin-bottom: 20px; /* Increased margin */
+    }
+
+    .testimonial .col-3 p {
+        font-size: 16px; /* Adjusted font size for testimonial text */
+    }
+
+    .testimonial .col-3 h3 {
+        font-size: 24px; /* Larger font size for testimonial heading */
+    }
+
+    /* Footer adjustments */
+    .footer {
+        padding: 30px 0; /* Increased padding for footer */
+        text-align: center;
+    }
+
+    .footer .footer-col-1, .footer-col-2, .footer-col-4 {
+        flex-basis: 30%; /* Adjust column width */
+        padding: 15px; /* Increased padding */
+        min-width: 250px; /* Ensure minimum width */
+    }
+
+    .footer-logo {
+        width: 130px; /* Larger footer logo */
+    }
+
+    .app-logo img {
+        width: 130px; /* Ensure app logo size is consistent */
+    }
+
+    .footer h3 {
+        font-size: 20px; /* Larger heading font size */
+    }
+
+    .footer p {
+        font-size: 15px; /* Adjusted text font size */
+    }
+
+    .footer ul li a {
+        font-size: 15px; /* Adjusted link font size */
+    }
+
+    .footer .newsletter input[type="email"] {
+        font-size: 15px; /* Adjusted font size for input field */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    .footer .newsletter button.btn {
+        font-size: 15px; /* Adjusted font size for button */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    .footer hr {
+        margin: 25px 0; /* Adjusted margin for horizontal rule */
+    }
+
+    .footer-bottom {
+        padding: 20px 0; /* Increased padding for footer bottom */
+        font-size: 15px; /* Adjusted font size for footer bottom text */
+    }
+
+    /* Adjust text for better readability */
+    h1, h3 {
+        line-height: 1.4; /* Increased line-height */
+    }
+
+    p {
+        font-size: 15px; /* Adjusted font size for better readability */
+    }
+
+    /* Ensure buttons are full width on mobile */
+    button {
+        width: 100%;
+        font-size: 15px; /* Adjusted font size for buttons */
+        padding: 12px; /* Adjusted padding */
+    }
+
+    /* General padding adjustments for better spacing */
+    .padding-mobile {
+        padding: 20px 0; /* Increased padding */
+    }
+}

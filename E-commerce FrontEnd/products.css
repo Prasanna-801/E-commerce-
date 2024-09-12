@@ -1,0 +1,81 @@
+/* Product Section */
+.product-section {
+    /* padding: 50px 0; */
+    background-color: #f9f9f9;
+}
+
+/* Product Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Product Card */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* flex: 1 1 calc(25% - 20px); */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card .product-title {
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+}
+
+.product-card .rating {
+    margin: 10px 0;
+}
+
+.product-card .rating .fa {
+    color: #ff523b;
+    font-size: 14px;
+}
+
+.product-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff523b;
+    margin: 10px 0;
+}
+
+/* Pagination */
+.page-btn {
+    text-align: center;
+    /* margin-top: 20px; */
+    
+}
+
+.page-btn span {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 5px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.page-btn span.active,
+.page-btn span:hover {
+    background-color: #ff523b;
+    color: #fff;
+}

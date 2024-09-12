@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="about.css">
+    <style>
+        /* Additional styling if needed */
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/Zapshop.png" alt="Logo" width="125px"> <!-- Updated logo name -->
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()" alt="Menu Icon">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Who We Are</h1>
+                    <p>
+                        At <strong>Our Company</strong>, we believe in innovation, quality, and trust. We started our journey in 2010, and since then, we have been committed to delivering the finest products in the industry.
+                    </p>
+                    <p>
+                        Our vision is to bring high-quality, sustainable products to the global market, ensuring customer satisfaction at every step. Whether it's through eco-friendly materials, cutting-edge technology, or exceptional customer service, we aim to exceed expectations.
+                    </p>
+                    <h2>Our Mission</h2>
+                    <p>
+                        Our mission is to create products that not only meet but also surpass the needs of our customers. We focus on:
+                    </p>
+                    <ul>
+                        <li>Providing top-tier products and services</li>
+                        <li>Innovating to make sustainable choices</li>
+                        <li>Fostering long-term relationships with clients</li>
+                    </ul>
+                    <a href="products.html" class="btn">Discover Our Products &#8594;</a>
+                </div>
+                <!-- <div class="col-2">
+                    <img src="images/about.mov" alt="About Image">
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function menuToggle() {
+            var navbar = document.querySelector('.navbar');
+            var menuIcon = document.querySelector('.menu-icon');
+            if (navbar.style.display === 'block') {
+                navbar.style.display = 'none';
+            } else {
+                navbar.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

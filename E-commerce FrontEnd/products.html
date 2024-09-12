@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!-- Base styles -->
+    <link rel="stylesheet" href="products.css"> <!-- Additional product styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>All Products - YourFitnessShop</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/Zapshop.png" alt="logo" width="400px" height="80px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="products.html">Products</a></li> -->
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.svg" alt="cart" width="30px" height="30px"></a>
+            <img class="menu-icon" src="images/menu.png" alt="menu" width="30px" height="30px" onclick="menutoggle()">
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <div class="container">
+        <div class="row row2">
+            <h2 class="title aa">All Products</h2>
+            <select>
+                <option>Default Sorting</option>
+                <option>Sort by price</option>
+                <option>Sort by popularity</option>
+                <option>Sort by ratings</option>
+                <option>Sort by sale</option>
+            </select>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-4 product-card">
+                <img src="images/products/p1.jpg" alt="product1">
+                <h4 class="product-title">Yoga Mat</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 799</p>
+            </div>
+            <div class="col-4 product-card">
+                <img src="images/products/p1.jpg" alt="product1">
+                <h4 class="product-title">Yoga Mat</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 799</p>
+            </div>            <div class="col-4 product-card">
+                <img src="images/products/p1.jpg" alt="product1">
+                <h4 class="product-title">Yoga Mat</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 799</p>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-4 product-card">
+                <img src="images/products/p2.jpg" alt="product2">
+                <h4 class="product-title">Fitness Tracker</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 2499</p>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-4 product-card">
+                <img src="images/products/p3.jpg" alt="product3">
+                <h4 class="product-title">Dumbbell Set</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 1499</p>
+            </div>
+            <div class="col-4 product-card">
+                <img src="images/products/p3.jpg" alt="product3">
+                <h4 class="product-title">Dumbbell Set</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 1499</p>
+            </div>
+            <div class="col-4 product-card">
+                <img src="images/products/p3.jpg" alt="product3">
+                <h4 class="product-title">Dumbbell Set</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 1499</p>
+            </div>
+            <!-- Product 4 -->
+            <div class="col-4 product-card">
+                <img src="images/products/p4.jpg" alt="product4">
+                <h4 class="product-title">Resistance Bands</h4>
+                <div class="rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                </div>
+                <p>&#8377; 599</p>
+            </div>
+            <!-- Add More Products as Needed -->
+        </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Get access to exclusive deals and offers by downloading our app for Android and iOS devices.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png" alt="Play Store">
+                    <img src="images/app-store.png" alt="App Store">
+                </div>
+            </div>
+            <div class="footer-col-2">
+
+                <p>We strive to provide sustainable and accessible shopping experiences, delivering quality products at the best prices.</p>
+                <div class="newsletter">
+                    <h4>Join Our Newsletter</h4>
+                    <form>
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ZapShop. All Rights Reserved.</p>
+       
+        </div>
+    </div>
+
+    <!-- JS for toggle menu -->
+    <script>
+        var menuItems = document.getElementById('menuItems');
+        menuItems.style.maxHeight = "0px";
+        const menutoggle = () => {
+            if(menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
